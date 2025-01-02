@@ -41,9 +41,9 @@ func main() {
 		log.SetOutput(io.Writer(fp))
 	}
 
-	log.Println("*** Quake 2 Master Server ***")
-	log.Printf("  (c) 2022-%d Packetflinger Industries\n", time.Now().Year())
-	log.Println("  https://github.com/packetflinger/q2master")
+	log.Println("*** Quake 2 Master Server")
+	log.Printf("*** (c) 2022-%d Packetflinger Industries\n", time.Now().Year())
+	log.Println("*** https://github.com/packetflinger/q2master")
 
 	m := master.NewMaster()
 	m.Address = *listenIP
