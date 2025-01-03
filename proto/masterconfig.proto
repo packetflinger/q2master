@@ -1,0 +1,15 @@
+// compile with:
+// protoc --go_out=. --go_opt=paths=source_relative masterconfig.proto
+syntax="proto3";
+option go_package = "github.com/packetflinger/q2master/proto";
+package proto;
+
+message MasterConfig {
+    string addr = 1;
+    uint32 port = 2;
+    bool foreground = 3;
+    string logfile = 4;
+    bool api = 5;
+    string api_addr = 6;
+    uint32 api_port = 7;
+}
